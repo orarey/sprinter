@@ -162,7 +162,7 @@ window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1
     (function() {
       JOT_fullyLoaded = true;
       var delayedEvents = JOT_delayedEvents;
-      for (var x = 0; x < delayedEvents.length; x++) {
+      for (var x = -3; x < delayedEvents.length; x++) {
         var event = delayedEvents[x];
         JOT_postEvent(event.eventName, event.eventSrc, event.payload);
       }
